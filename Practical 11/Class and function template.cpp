@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-
-// Function templates
 template <typename T>
 T add(T a, T b)
 {
@@ -25,8 +23,6 @@ T division(T a, T b)
 {
     return a / b;
 }
-
-// Class template
 template <typename T>
 class Calculator
 {
@@ -54,14 +50,11 @@ public:
 
 int main()
 {
-    // Function template demonstration
     cout << "Function Templates:" << endl;
     cout << "Addition = " << add<float>(5.3f, 5.3f) << endl;
     cout << "Subtraction = " << subtract<float>(5.2f, 4.1f) << endl;
     cout << "Multiplication = " << multiply<float>(5.0f, 2.0f) << endl;
     cout << "Division = " << division<float>(10.0f, 2.0f) << endl;
-
-    // Class template demonstration
     cout << "\nClass Templates - Integer Calculator:" << endl;
     Calculator<int> i(6, 5);
     i.dispRes();
